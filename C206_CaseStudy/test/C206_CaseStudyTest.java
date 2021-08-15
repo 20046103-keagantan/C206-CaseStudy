@@ -38,8 +38,8 @@ public class C206_CaseStudyTest {
 
 	@Before
 	public void setUp() throws Exception {
-		p1 = new Promotion(1, "Spaghetti", 5.00, 3.50, 6);
-		p2 = new Promotion(2, "Fries", 3.00, 1.00, 6);
+		p1 = new Promotion(1, "Pasta", 5.00, 3.50, 6);
+		p2 = new Promotion(2, "Fried Rice", 3.00, 1.00, 6);
 		po1 = new purchaseOrder(1, "Spaghetti", 5.00, 20, "cash");
 		po2 = new purchaseOrder(2, "Fries", 3.00, 50, "cash");
 		f1 = new Food(01, "Bubble Tea", 3, "Drinks Stall");
@@ -132,9 +132,9 @@ public class C206_CaseStudyTest {
 		// test if the expected output string same as the list of promotion retrieved
 		// from the SourceCentre
 		allPromotion = C206_CaseStudy.retrieveAllPromotion(promotionList);
-		testOutput = String.format("%-10s %-10s %-20s %-10s %-10s %-20s\n", "1", "Spaghetti", "5.00", "Yes", "3.50",
+		testOutput = String.format("%-10s %-10s %-20s %-10s %-10s %-20s\n", "1", "Pasta", "5.00", "Yes", "3.50",
 				"6");
-		testOutput += String.format("%-10s %-10s %-20s %-10s %-10s %-20s\n", "2", "Fries", "3.00", "Yes", "1.00", "6");
+		testOutput += String.format("%-10s %-10s %-20s %-10s %-10s %-20s\n", "2", "Fried Rice", "3.00", "Yes", "1.00", "6");
 
 		assertEquals("Test that ViewAllPromotionlist", testOutput, allPromotion);
 
