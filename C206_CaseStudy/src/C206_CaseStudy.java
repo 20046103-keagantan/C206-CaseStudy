@@ -8,8 +8,8 @@ public class C206_CaseStudy {
 		int option = 0;
 
 		ArrayList<Promotion> promotionList = new ArrayList<Promotion>();
-		promotionList.add(new Promotion(1, "Spaghetti", 5.00, 3.50, 6));
-		promotionList.add(new Promotion(2, "Fries", 3.00, 1.00, 6));
+		promotionList.add(new Promotion(1, "Pasta", 5.00, 3.50, 6));
+		promotionList.add(new Promotion(2, "Fried Rice", 3.00, 1.00, 6));
 
 		ArrayList<purchaseOrder> poList = new ArrayList<purchaseOrder>();
 		poList.add(new purchaseOrder(1, "Spaghetti", 5.00, 20, "cash"));
